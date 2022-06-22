@@ -23,6 +23,22 @@ padding: 3em;}
     width: 150px;
     padding: 15px 0px ;
     border-radius: 50px;
+    cursor: pointer;
+    transition: background 500ms;
+    transition-timing-function: ease-in;
+    animation-name: myanimation;
+    animation-delay: 2s;
+    animation-duration: 5s;
+}
+
+
+#trial:hover{
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+}
+.second-container{
+    transition: width 2s;
+    transition-timing-function: linear;
 }
 
 
@@ -52,7 +68,13 @@ padding: 3em;}
     border-radius: 30px;
     border: none;
     background-color: hsl(322, 100%, 66%);
+    cursor: pointer;
+    transition: background 500ms;
+    animation-name: myanimation2;
+    animation-delay: 2s;
+    animation-duration: 5s;
 }
+
 #first-image{
     flex-basis: 50vw;
     width: 50vw;
@@ -152,9 +174,7 @@ padding: 3em;}
 section{
     width: 100%;
     margin-top: 300px;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
+   
 }
 .third-container{
     display: flex;
@@ -187,6 +207,11 @@ section{
     padding: 15px 60px;
     border-radius: 40px;
     margin-left: 50px;
+    cursor: pointer;
+    transition: background 500ms;
+    animation-name: myanimation2;
+    animation-delay: 2s;
+    animation-duration: 5s;
 }
 
 .bottom{
@@ -380,4 +405,22 @@ section{
         margin-left: 30px;
     }
     
+}
+
+/* Animations */
+@keyframes myanimation {
+    0%{background-color: white;}
+    25%{background-color: hsl(192, 100%, 9%);}
+    50%{background-color: hsl(193, 100%, 96%);}
+    75%{background-color: hsl(322, 100%, 66%);}
+    100%{background-color: white;}
+
+    
+}
+@keyframes myanimation2 {
+    0%{background-color: hsl(322, 100%, 66%);}
+    25%{background-color: hsl(192, 100%, 9%);}
+    50%{background-color: black;}
+    75%{background-color: hsl(322, 100%, 66%);}
+    100%{background-color: hsl(322, 100%, 66%);}
 }
